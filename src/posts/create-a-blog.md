@@ -1,3 +1,7 @@
+---
+title: Create a Blog
+---
+
 # Creating a Blog
 
 ## With MDSvex and TailwindCSS
