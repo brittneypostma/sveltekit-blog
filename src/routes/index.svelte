@@ -2,6 +2,10 @@
 	import ReadMe from '/README.md'
 </script>
 
-<article class="grid grid-cols-1 gap-5">
+<svelte:head>
+	<title>Home | SvelteKit Blog</title>
+</svelte:head>
+
+<article class="prose lg:prose-xl">
 	<ReadMe />
 </article>

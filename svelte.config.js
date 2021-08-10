@@ -20,7 +20,9 @@ const config = {
 					'@utils': path.resolve('./src/lib/utils'),
 					'@posts': path.resolve('./src/posts'),
 					'@hooks': path.resolve('./src/lib/hooks'),
-					'@api': path.resolve('./src/lib/api')
+					'@api': path.resolve('./src/lib/api'),
+					'@styles': path.resolve('./src/lib/styles'),
+					'@stores': path.resolve('./src/lib/stores')
 				}
 			}
 		}

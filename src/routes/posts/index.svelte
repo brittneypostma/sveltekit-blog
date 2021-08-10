@@ -6,7 +6,6 @@
 			const title = post[1].metadata.title
 			return {
 				slug,
-				post,
 				title
 			}
 		})
@@ -22,11 +21,17 @@
 	export let posts
 </script>
 
-<section class="grid grid-cols-1 gap-5">
+<svelte:head>
+	<title>Posts | SvelteKit Blog</title>
+</svelte:head>
+
+<section class="prose lg:prose-xl">
 	<h1>Posts</h1>
 	<ul class="grid grid-cols-1 gap-2">
 		{#each posts as post}
-			<li class="pb-1 border-b-2 border-black"><a href={`/posts/${post.slug}`}>{post.title}</a></li>
+			<li>
+				<a sveltekit:prefetch href={`/posts/${post.slug}`}>{post.title}</a>
+			</li>
 		{/each}
 	</ul>
 </section>

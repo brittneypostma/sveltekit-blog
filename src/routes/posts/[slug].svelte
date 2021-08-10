@@ -1,10 +1,11 @@
 <script context="module">
 	export async function load({ page }) {
-		const Post = (await import(`../../posts/${page.params.slug}.md`)).default
+		const Post = await import(`../../posts/${page.params.slug}.md`)
 		// }
 		return {
 			props: {
-				Post
+				Post: Post.default,
+				title: Post.metadata.title
 			}
 		}
 	}
@@ -12,8 +13,13 @@
 
 <script>
 	export let Post
+	export let title
 </script>
 
-<article class="grid grid-cols-1 gap-5">
+<svelte:head>
+	<title>{title} | SvelteKit Blog</title>
+</svelte:head>
+
+<article class="prose lg:prose-xl">
 	<svelte:component this={Post} />
 </article>

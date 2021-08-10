@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	#svelte {
+		@apply grid grid-cols-1 text-base lg:text-xl max-w-2xl mx-auto h-screen overflow-hidden;
+		grid-template-rows: auto 1fr auto;
+	}
+
+	h1 {
+		@apply text-5xl font-bold;
+	}
+
+	h2 {
+		@apply text-4xl font-bold;
+	}
+
+	.prose:first-child {
+		margin-top: 0.8571429em;
+	}
+
+	.prose li a {
+		@apply no-underline pb-1 border-b-2 border-purple-800 transition-all hover:border-b-4 hover:border-pink-500 justify-self-start;
+	}
+}

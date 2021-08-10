@@ -10,7 +10,7 @@
 </nav>
 
 <style>
-	:global(li) {
+	li {
 		@apply border-b-4 border-transparent transition-all hover:border-pink-500 justify-self-start;
 	}
 	.active {

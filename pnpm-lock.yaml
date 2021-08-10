@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@sveltejs/adapter-static': ^1.0.0-next.16
   '@sveltejs/kit': next
+  '@tailwindcss/typography': ^0.4.1
   autoprefixer: ^10.3.1
   cssnano: ^5.0.6
   eslint: ^7.22.0
@@ -20,6 +21,7 @@ specifiers:
 devDependencies:
   '@sveltejs/adapter-static': 1.0.0-next.16
   '@sveltejs/kit': 1.0.0-next.146_svelte@3.42.1
+  '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.7
   autoprefixer: 10.3.1_postcss@8.3.6
   cssnano: 5.0.7_postcss@8.3.6
   eslint: 7.32.0
@@ -166,6 +168,18 @@ packages:
       vite: 2.4.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@tailwindcss/typography/0.4.1_tailwindcss@2.2.7:
+    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      lodash.uniq: 4.5.0
+      tailwindcss: 2.2.7_7b69a43ec4689fa7484dee35f79a7806
     dev: true
 
   /@trysound/sax/0.1.1:
@@ -1196,8 +1210,16 @@ packages:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
+  /lodash.castarray/4.4.0:
+    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=}
+    dev: true
+
   /lodash.clonedeep/4.5.0:
     resolution: {integrity: sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=}
+    dev: true
+
+  /lodash.isplainobject/4.0.6:
+    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=}
     dev: true
 
   /lodash.memoize/4.1.2:
