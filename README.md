@@ -5,9 +5,7 @@
 ## Table of Contents
 
 - [Creating a Blog](#creating-a-blog)
-  - [With MDSvex and TailwindCSS](#with-mdsvex-and-tailwindcss)
-  - [Table of Contents](#table-of-contents)
-    - [Starting up the App](#starting-up-the-app)
+  - [Starting up the App](#starting-up-the-app)
   - [Next Steps](#next-steps)
 
 ### Starting up the App
